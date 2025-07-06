@@ -10,3 +10,7 @@ export enum PositionActionsEnum {
   REMOVE_POSITION = "REMOVE_POSITION",
   CLEAR_ALL_POSITIONS = "CLEAR_ALL_POSITIONS",
 }
+export enum OddAnimationEnum {
+  ODD_INCREASE = "increase",
+  ODD_DECREASE = "decrease",
+}

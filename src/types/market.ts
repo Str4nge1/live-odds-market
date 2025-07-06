@@ -1,3 +1,5 @@
+import type { OddAnimationEnum } from "@enums";
+
 export const marketOdds = ["1X2", "DoubleChance", "TotalGoals"] as const;
 
 export type MarketType = (typeof marketOdds)[number];
@@ -21,7 +23,7 @@ export type OddsSelection = {
   line?: number;
 };
 
-type Market = {
+export type Market = {
   oddsSelections: OddsSelection[];
 };
 
@@ -43,9 +45,11 @@ export type Match = {
 
 export type Matches = Match[];
 
-export type MatchesResponse = Record<string, Match>
+export type MatchesResponse = Record<string, Match>;
 
 export type UpdateMatchesConfig = {
   count?: number;
   updateIntensity?: number;
 };
+
+export type OddAnimationType = OddAnimationEnum;

@@ -11,7 +11,6 @@ export const handlers = [
   }),
   liveUpdatesWs.addEventListener("connection", ({ client }) => {
     const interval = setInterval(() => {
-      console.log('in web socket', updateMatches(randomMatches))
       client.send(JSON.stringify(updateMatches(randomMatches)));
     }, WS_MESSAGE_INTERVAL);
 

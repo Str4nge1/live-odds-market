@@ -1,7 +1,12 @@
 import LiveOddsMarket from "@features/live-market";
+import { AppLayout } from "@layout";
 
 function App() {
-  return <LiveOddsMarket />;
+  return (
+    <AppLayout>
+      <LiveOddsMarket />
+    </AppLayout>
+  );
 }
 
 export default App;

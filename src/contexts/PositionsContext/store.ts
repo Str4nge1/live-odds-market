@@ -8,11 +8,14 @@ export type PositionData = {
   selectedPosition: {
     optionName: string;
     optionOdd: number;
+    optionId: string
   };
 };
 
+export type Positions = Record<string, PositionData>
+
 export type State = {
-  positions: Record<string, PositionData>;
+  positions: Positions;
 };
 
 export type SavePositionPayload = {

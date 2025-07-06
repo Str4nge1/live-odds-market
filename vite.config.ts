@@ -18,6 +18,8 @@ export default defineConfig({
       "@hooks": path.resolve(__dirname, "./src/hooks"),
       "@enums": path.resolve(__dirname, "./src/enums"),
       "@contexts": path.resolve(__dirname, "./src/contexts"),
+      "@layout": path.resolve(__dirname, "./src/layout"),
+      "@widgets": path.resolve(__dirname, "./src/widgets")
     },
   },
 });

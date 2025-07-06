@@ -7,14 +7,15 @@ import App from "./App.tsx";
 import { enableMocking } from "@utils";
 import { queryClient } from "@http";
 
-import "./index.css";
 import { PositionsContextProvider } from "@contexts";
+import { CssBaseline } from "@mui/material";
 
 enableMocking().then(() => {
   createRoot(document.getElementById("root")!).render(
     <StrictMode>
       <QueryClientProvider client={queryClient}>
         <PositionsContextProvider>
+          <CssBaseline />
           <App />
         </PositionsContextProvider>
       </QueryClientProvider>

@@ -20,7 +20,7 @@ const Row = ({
 
   return (
     <div style={style}>
-      <MatchCard match={match} position={position} />
+      <MatchCard match={match} position={position} matchIndex={index} />
     </div>
   );
 };

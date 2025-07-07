@@ -30,10 +30,11 @@ const renderMarketOdds = ({
   </Grid>
 );
 
-const MatchCard: FC<{ match: Match; position: PositionData }> = ({
-  match,
-  position,
-}) => {
+const MatchCard: FC<{
+  match: Match;
+  position: PositionData;
+  matchIndex: number;
+}> = ({ match, position, matchIndex }) => {
   const {
     id,
     sport: { icon },
@@ -50,6 +51,7 @@ const MatchCard: FC<{ match: Match; position: PositionData }> = ({
       matchId: id,
       position: {
         match,
+        matchIndex,
         selectedPosition: {
           optionName: selection.name,
           optionOdd: selection.odds,

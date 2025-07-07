@@ -5,6 +5,7 @@ import { createContext } from "react";
 
 export type PositionData = {
   match: Match;
+  matchIndex: number
   selectedPosition: {
     optionName: string;
     optionOdd: number;
